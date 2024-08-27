@@ -7,7 +7,7 @@ Styled Components AnimateCSS
 
 <p align="center">
 <a href="https://www.npmjs.com/package/styled-components-animatecss"><img src="https://img.shields.io/npm/dt/styled-components-animatecss" alt="Total Downloads"></a>
-  <a href="https://github.com/styled-components-animatecss/releases"><img src="https://img.shields.io/npm/v/styled-components-animatecss" alt="Latest Release"></a>
+  <a href="https://github.com/nakzyu/styled-components-animatecss/releases"><img src="https://img.shields.io/npm/v/styled-components-animatecss" alt="Latest Release"></a>
 </p>
 
 ## Installation
