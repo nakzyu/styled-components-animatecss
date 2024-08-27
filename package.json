@@ -1,0 +1,39 @@
+{
+  "name": "styled-components-animatecss",
+  "title": "Styled Components Animatecss",
+  "description": "",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "hhttps://github.com/nakzyu/styled-components-animatecss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nakzyu/styled-components-animatecss.git"
+  },
+  "keywords": [
+    "Styled Components Animatecss",
+    "Styled Components Animation",
+    "animate.css styled components"
+  ],
+  "files": [
+    "/dist"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.5.3",
+    "@swc/helpers": "^0.5.11",
+    "@types/node": "^22.5.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "styled-components": "*"
+  },
+  "scripts": {
+    "build": "yarn add styled-components && node build.js && swc index.ts -d dist && tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.12"
+  }
+}
