@@ -1,11 +1,10 @@
 {
   "name": "styled-components-animatecss",
   "title": "Styled Components Animatecss",
-  "description": "",
-  "version": "0.0.1",
+  "description": "Extract and convert keyframes from animate.css into a JavaScript module that can be imported and used with styled-components.",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "homepage": "hhttps://github.com/nakzyu/styled-components-animatecss",
   "repository": {
     "type": "git",
     "url": "https://github.com/nakzyu/styled-components-animatecss.git"
@@ -19,21 +18,20 @@
     "/dist"
   ],
   "license": "MIT",
+  "author": "nakzyu <nakzyu@gmail.com>",
   "devDependencies": {
     "@swc/cli": "^0.3.12",
     "@swc/core": "^1.5.3",
     "@swc/helpers": "^0.5.11",
     "@types/node": "^22.5.0",
+    "styled-components": "^6.1.12",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
     "styled-components": "*"
   },
   "scripts": {
-    "build": "yarn add styled-components && node build.js && swc index.ts -d dist && tsc",
+    "build": "node build.js && swc index.ts -d dist && tsc",
     "prepublishOnly": "yarn build"
-  },
-  "dependencies": {
-    "styled-components": "^6.1.12"
   }
 }
