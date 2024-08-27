@@ -35,7 +35,7 @@ const Ball = styled.div`
 `;
 ```
 
-## Advantages Over Importing animate.css Directly
+## Advantages Over Importing `animate.css` Directly
 
 - Tree Shaking
 - Code Reusability
