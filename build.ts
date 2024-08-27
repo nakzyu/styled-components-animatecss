@@ -1,22 +1,22 @@
 const fs = require("fs").promises;
 
-const removeCommon = (text) => {
+const removeCommon = (text: string) => {
   const regex = /:root[\s\S]*?@-webkit-keyframes/;
   return text.replace(regex, "@-webkit-keyframes");
 };
 
-const removeWebkitKeyframes = (text) => {
+const removeWebkitKeyframes = (text: string) => {
   const regex =
     /@-webkit-keyframes\s+[\w-]+\s*\{[^{}]*?(?:\{[^{}]*?\}[^{}]*?)*\}/g;
   return text.replace(regex, "");
 };
 
-const removeCSSClass = (text) => {
+const removeCSSClass = (text: string) => {
   const regex = /\.[\w-]+(?:\.[\w-]+)*\s*\{[^{}]*?(?:\{[^{}]*?\}[^{}]*?)*\}/g;
   return text.replace(regex, "");
 };
 
-const convertCSSKeyframesToJS = (text) => {
+const convertCSSKeyframesToJS = (text: string) => {
   const regex = /@keyframes\s+(\w+)\s*\{([^{}]*?(?:\{[^{}]*?\}[^{}]*?)*)\}/g;
 
   let result;
