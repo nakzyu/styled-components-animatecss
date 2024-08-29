@@ -2,7 +2,7 @@
   "name": "styled-components-animatecss",
   "title": "Styled Components Animatecss",
   "description": "Extract and convert keyframes from animate.css into a JavaScript module that can be imported and used with styled-components.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -10,9 +10,10 @@
     "url": "https://github.com/nakzyu/styled-components-animatecss.git"
   },
   "keywords": [
-    "Styled Components Animatecss",
-    "Styled Components Animation",
-    "animate.css styled components"
+    "styled-components",
+    "animate.css",
+    "Styled-components with animate.css",
+    "animate-css-styled-components"
   ],
   "files": [
     "/dist"
